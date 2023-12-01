@@ -9,6 +9,6 @@ class TiendaController extends Controller
 {
     public function mostrarPresentacion()
     {
-        return view('Mejia.tienda.presentacion');
+        return view('tienda.presentacion');
     }
 }

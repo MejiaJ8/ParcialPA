@@ -7,8 +7,9 @@ use Illuminate\Http\Request;
 
 class ArticuloController extends Controller
 {
-    public function mostrarArticulos()
+    public function listarArticulos()
     {
-        return view('mejia.articulos.listado');
+        $articulos = Articulo::all();
+        return view('articulos.lista', compact('articulos'));
     }
 }

@@ -16,3 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/{Mejia}/articulos', 'ArticuloController@listarArticulos');
+Route::get('/{Mejia}/marcas', 'MarcaController@listarMarcas');
+Route::get('/{Mejia}/presentacion', 'TiendaController@mostrarPresentacion');
+
